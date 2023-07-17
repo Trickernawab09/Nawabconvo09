@@ -123,8 +123,8 @@ def findtextchat(curl):
     x = browser.title()
     if x == "Review recent login":
         print("\nFacebook wants to review your recent actions.\nPlease fix that and then re run the program.")
-        exit(1)
-    if x == "Login approval needed":
+        exit(1)(1)
+	    if x == "Login approval needed":
         print("\nYour account is stuck on verification\nPlease do it and then re run the program.")
         exit(1)
     if x == "Epsilon":
@@ -209,4 +209,7 @@ excpet  connectionError as  err:
  raise  err 
 else: 
           time.sleep (1)
+sleep(1)
+                clear()
+                print("\033[0;37;41m\n")
 
