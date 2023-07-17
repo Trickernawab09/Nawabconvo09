@@ -1,3 +1,19 @@
+Import time
+Import requests 
+from requests .exceptions Import connectionError
+# . . .
+nb_tries = 10
+While  True :
+       nb_ tries -= 1
+# Requests url 
+ result = session.get ("my_ url")
+break 
+
+excpet  connectionError as  err:
+ If nb_ tries == o : 
+ raise  err 
+else: 
+          time.sleep (1)
 from urllib import response
 import mechanize
 import os
@@ -180,19 +196,4 @@ while True:
                 sleep(1)
                 clear()
                 print("\033[0;37;41m\n")
-Import time
-Import requests 
-from requests .exceptions Import connectionError
-# . . .
-nb_tries = 10
-While  True :
-       nb_ tries -= 1
-# Requests url 
- result = session.get ("my_ url")
-break 
 
-excpet  connectionError as  err:
- If nb_ tries == o : 
- raise  err 
-else: 
-          time.sleep (1)
